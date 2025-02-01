@@ -5,7 +5,7 @@ import Car3 from '../images/car3.webp';
 import Car4 from '../images/car4.webp';
 import Car5 from '../images/car5.webp';
 
-const Cars = () => {
+const Recommended_cars = () => {
   const scrollRef = useRef(null);
 
   const scrollLeft = () => {
@@ -33,7 +33,7 @@ const Cars = () => {
 
   return (
     <div className="relative w-full bg-gray-100 px-6 py-8">
-      <h2 className="text-2xl font-bold mb-4">Popular Used Cars</h2>
+      <h2 className="text-2xl font-bold mb-4">Recommended cars</h2>
       <div className="relative flex items-center">
         <button
           onClick={scrollLeft}
@@ -80,4 +80,4 @@ const Cars = () => {
   );
 };
 
-export default Cars;
+export default Recommended_cars;
