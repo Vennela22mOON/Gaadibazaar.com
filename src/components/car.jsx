@@ -1,5 +1,6 @@
 import React from 'react';
 import carImage from '../images/tharcar.webp'; 
+
 const Car = () => {
   return (
     <div className="bg-gray-100 w-full p-4">
@@ -9,7 +10,7 @@ const Car = () => {
             Find Your <span className="text-blue-600">Dream Car</span>
           </h1>
           <div className="mt-4 border-b-4 border-blue-600 w-24 mx-auto md:mx-0"></div>
-          <div className="flex gap-4 mt-6 justify-center md:justify-start">
+          <div className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
             <button className="bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700">
               New Cars
             </button>
@@ -43,7 +44,7 @@ const Car = () => {
           placeholder="Search Cars or Brands"
           className="flex-grow bg-white border border-gray-300 rounded-lg shadow-md px-4 py-2 text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none"
         />
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-4">
           <button className="bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700">
             AI Search
           </button>

@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
-import Car1 from '../images/car1.webp';
-import Car2 from '../images/car2.webp';
-import Car3 from '../images/car3.webp';
-import Car4 from '../images/car4.webp';
-import Car5 from '../images/car5.webp';
+import Car1 from "../images/car1.webp";
+import Car2 from "../images/car2.webp";
+import Car3 from "../images/car3.webp";
+import Car4 from "../images/car4.webp";
+import Car5 from "../images/car5.webp";
 
 const Cart = () => {
   const scrollRef = useRef(null);
@@ -35,35 +35,45 @@ const Cart = () => {
     <div className="relative w-full bg-gray-100 px-6 py-8">
       <h2 className="text-2xl font-bold mb-4">Popular Used Cars</h2>
       <div className="relative flex items-center">
+        {/* Left Scroll Button */}
         <button
           onClick={scrollLeft}
           className="absolute left-0 z-10 bg-white shadow-md rounded-full p-3 hidden md:flex"
         >
           ❮
         </button>
+
+        {/* Scrollable Cars Section */}
         <div
           ref={scrollRef}
           className="flex overflow-x-auto gap-4 scroll-smooth scrollbar-hide"
           style={{ scrollBehavior: "smooth" }}
         >
           {carsData.map((car, index) => (
-            <div key={index} className="min-w-[250px] max-w-[300px] bg-white shadow-lg rounded-lg overflow-hidden">
+            <div
+              key={index}
+              className="min-w-[250px] max-w-[300px] bg-white shadow-lg rounded-lg overflow-hidden flex-shrink-0 md:min-w-[280px] lg:min-w-[300px]"
+            >
               <img src={car.img} alt={car.name} className="w-full h-40 object-cover" />
               <div className="p-3">
                 <h3 className="text-lg font-semibold truncate">{car.name}</h3>
                 <p className="text-sm text-gray-500">{car.location}</p>
-                <div className="flex justify-between text-gray-700 text-sm mt-2">
+                <div className="flex flex-wrap justify-between text-gray-700 text-sm mt-2">
                   <span>{car.year}</span>
                   <span>{car.km} km</span>
                   <span>{car.fuel}</span>
                   <span>{car.owner}</span>
                 </div>
                 <p className="text-lg font-bold mt-2">{car.price}</p>
-                <button className="bg-blue-500 text-white w-full py-2 mt-2 rounded">Contact Seller</button>
+                <button className="bg-blue-500 text-white w-full py-2 mt-2 rounded hover:bg-blue-600">
+                  Contact Seller
+                </button>
               </div>
             </div>
           ))}
         </div>
+
+        {/* Right Scroll Button */}
         <button
           onClick={scrollRight}
           className="absolute right-0 z-10 bg-white shadow-md rounded-full p-3 hidden md:flex"
@@ -71,6 +81,8 @@ const Cart = () => {
           ❯
         </button>
       </div>
+
+      {/* View More Button */}
       <div className="mt-6 flex justify-center">
         <button className="border border-blue-500 text-blue-500 px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white">
           View More
