@@ -10,6 +10,7 @@ import Cars from './components/Cars'
 import Recommended_cars from './components/Recommended_cars'
 import Recent_Cars from './components/Recent_Cars'
 import Brands from './components/Brands'
+import HomeLoan from './components/HomeLoan'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Navbar />
       <Car />
       <Brands />
+      <HomeLoan />
       <Cart />
       <Mobile />
       <Cars />
