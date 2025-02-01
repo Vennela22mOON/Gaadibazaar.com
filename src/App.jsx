@@ -11,12 +11,12 @@ import Recommended_cars from './components/Recommended_cars';
 import Recent_Cars from './components/Recent_Cars';
 import Brands from './components/Brands';
 import HomeLoan from './components/HomeLoan';
-import LoanForm from './components/LoanForm'; // Import LoanForm
+import LoanForm from './components/LoanForm'; 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Router> {/* Router should wrap the entire app */}
+    <Router> 
       <div>
         <Navbar />
         <Car />
