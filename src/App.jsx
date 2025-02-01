@@ -4,6 +4,7 @@ import Car from './components/car'
 import Footer from './components/Footer'
 import Mobile from './components/Mobile'
 import Cart from './components/Cart'
+import Road from './components/Road'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Car />
       <Cart />
       <Mobile />
+      <Road />
       <Footer/>
     </div>
     
