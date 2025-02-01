@@ -14,6 +14,8 @@ import Road from './components/Road';
 import Cars from './components/Cars';
 import Mobile from './components/Mobile';
 import Car from './components/Car';
+import Bike from './bikeComponents/Bike';
+import Bike_page from './bikeComponents/Bike_page';
 
 function App() {
   return (
@@ -39,6 +41,7 @@ function App() {
         />
         <Route path="/loan_form" element={<LoanForm />} />
         <Route path="/view-cars" element={<View_cars />} />
+        <Route path="/bikes" element={<Bike_page />} />
       </Routes>
       <Footer />
     </Router>

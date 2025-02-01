@@ -38,7 +38,9 @@ function Navbar() {
         </div>
         <div className="hidden md:flex gap-4">
           <FaCar size={25} className="text-white" />
+          <Link to='/bikes'>
           <FaMotorcycle size={30} className="text-white" />
+          </Link>
           <FaTruck size={25} className="text-white" />
           <FaCogs size={25} className="text-white" />
           <FaBus size={25} className="text-white" />
