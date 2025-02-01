@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import Car1 from "../images/car1.webp";
 import Car2 from "../images/car2.webp";
 import Car3 from "../images/car3.webp";
@@ -140,9 +141,11 @@ const Cart = () => {
       )}
 
       <div className="mt-6 flex justify-center">
-        <button className="border border-blue-500 text-blue-500 px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white">
+       <Link to='/view-cars'>
+       <button className="border border-blue-500 text-blue-500 px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white">
           View More
         </button>
+       </Link>
       </div>
     </div>
   );

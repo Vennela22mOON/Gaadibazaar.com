@@ -4,7 +4,7 @@ import Car2 from "../images/car2.webp";
 import Car3 from "../images/car3.webp";
 import Car4 from "../images/car4.webp";
 import Car5 from "../images/car5.webp";
-
+import { Link } from "react-router-dom";
 const Cart = () => {
   const [selectedCar, setSelectedCar] = useState(null); // State to hold selected car details
   const scrollRef = useRef(null);
@@ -140,9 +140,11 @@ const Cart = () => {
       )}
 
       <div className="mt-6 flex justify-center">
-        <button className="border border-blue-500 text-blue-500 px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white">
+       <Link to='/view-cars'>
+       <button className="border border-blue-500 text-blue-500 px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white">
           View More
         </button>
+       </Link>
       </div>
     </div>
   );
