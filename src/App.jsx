@@ -9,12 +9,14 @@ import RegisterCar from './components/RegisterCar'
 import Cars from './components/Cars'
 import Recommended_cars from './components/Recommended_cars'
 import Recent_Cars from './components/Recent_Cars'
+import Brands from './components/Brands'
 
 function App() {
   return (
     <div>
       <Navbar />
       <Car />
+      <Brands />
       <Cart />
       <Mobile />
       <Cars />
