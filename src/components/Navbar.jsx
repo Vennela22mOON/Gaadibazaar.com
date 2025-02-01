@@ -37,13 +37,18 @@ function Navbar() {
           <h1 className="text-white text-xl sm:text-2xl font-bold">Gaadi Bazaar.in</h1>
         </div>
         <div className="hidden md:flex gap-4">
+          <Link to='/'>
           <FaCar size={25} className="text-white" />
+          </Link>
           <Link to='/bikes'>
           <FaMotorcycle size={30} className="text-white" />
           </Link>
+          <Link to='/trucks'>
           <FaTruck size={25} className="text-white" />
-          <FaCogs size={25} className="text-white" />
+          </Link>
+          <Link to='/buses'>
           <FaBus size={25} className="text-white" />
+          </Link>
         </div>
         <div className="hidden md:flex items-center gap-4">
           <div className="relative">
